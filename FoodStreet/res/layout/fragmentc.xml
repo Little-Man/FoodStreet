@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efecea"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:src="@drawable/account" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎您登录美食街"
+                android:textColor="#ae97ad"
+                android:textSize="22sp" />
+
+            
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:onClick="xiugai"
+            android:text="修改资料"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userRealName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="姓名:"
+                android:textColor="#ae97ad"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#efecea"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/userGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="性别:"
+                android:textColor="#ae97ad"
+                android:textSize="14sp" 
+               />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efecea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="年龄:"
+                android:textColor="#ae97ad"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#efecea"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/userTel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="电话:"
+                android:textColor="#ae97ad"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efecea" />
+
+        <TextView
+            android:id="@+id/userAddr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="地址:"
+            android:textColor="#ae97ad"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efecea" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="邮箱:"
+            android:textColor="#ae97ad"
+            android:textSize="14sp" />
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gouwuche" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="70dp"
+                android:paddingTop="10dp"
+                android:text="我的订单"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efecea" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="订单号:"
+            android:textColor="#ae97ad"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efecea" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="创建日期:"
+            android:textColor="#ae97ad"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efecea" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="总价:"
+            android:textColor="#ae97ad"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="exit"
+            android:text="注销" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#efecea"
+            android:text=" " />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="toOrderForm"
+            android:text="订单" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#efecea"
+            android:text=" " />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="toShoppingCart"
+            android:text="我的购物车" />
+    </LinearLayout>
+
+</LinearLayout>

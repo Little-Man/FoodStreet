@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">美食街</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_reg">RegActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="title_activity_shop_product">ShopProductActivity</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="title_activity_shop_cart">ShopCartActivity</string>
+    <string name="title_activity_order_list_detail">OrderListDetailActivity</string>
+    <string name="title_activity_edut">EdutActivity</string>
+
+</resources>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/proImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/check"
+        android:src="@drawable/load" />
+
+    <LinearLayout
+        android:id="@+id/proInfo"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/proImg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/proName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textColor="#ee7733"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/proDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品描述"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/proPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="价格:45元"
+                android:textColor="#22ff22"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="店铺名称"
+                android:textColor="#999"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fgx"
+        android:layout_width="1dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/proInfo"
+        android:background="#ccc"
+        android:text=" " />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/fgx"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量" />
+
+        <TextView
+            android:id="@+id/proCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="X 5" />
+    </LinearLayout>
+
+</RelativeLayout>

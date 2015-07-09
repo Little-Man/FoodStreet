@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.niit.rs.WelcomeActivity$PlaceholderFragment" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="horizontal">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goBack"
+            android:src="@drawable/backimg"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户登录"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    
+    <EditText 
+        android:id="@+id/loginName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="用户名"
+        />
+    <EditText 
+        android:id="@+id/loginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="密码"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/btnLogin"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:layout_weight="1"
+	        android:background="#07AD35"
+	        android:onClick="login"
+	        android:text="Sign in"/>
+	    
+	    <Button 
+	        android:id="@+id/btnReg"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:layout_weight="1"
+	        android:background="#07AD35"
+	        android:onClick="toReg"
+	        android:text="Create account"/>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

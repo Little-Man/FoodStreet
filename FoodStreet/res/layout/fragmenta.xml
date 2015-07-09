@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#4F6F63"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="面食类"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#346A8B"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="肉食类"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#1EA232"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"               
+                android:text="鲜汤类"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/C4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#B091f1"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="烧烤类"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <!-- 第二行 -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/C5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#28B9D2"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="水果类"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/C6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#A1F48F"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="米饭类"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/C7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#D114ED"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="饮料类"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/C8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#775AA0"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="蔬菜类"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productLv">
+        
+    </ListView>
+    
+    
+</LinearLayout>
